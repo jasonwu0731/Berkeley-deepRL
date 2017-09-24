@@ -55,7 +55,7 @@ def main():
                 totalr += r
                 steps += 1
                 if args.render:
-                    env.render()
+                    env.render()  
                 if steps % 100 == 0: print("%i/%i"%(steps, max_steps))
                 if steps >= max_steps:
                     break
