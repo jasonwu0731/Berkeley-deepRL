@@ -49,6 +49,7 @@ def main():
             steps = 0
             while not done:
                 action = policy_fn(obs[None,:])
+                #print("action", action)
                 observations.append(obs)
                 actions.append(action)
                 obs, r, done, _ = env.step(action)
