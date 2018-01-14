@@ -1,16 +1,20 @@
+Berkeley CS 294: Deep Reinforcement Learning (Fall 2017)
+======================================
 
-# Run
-*   run behavioral cloning
+## Intro
+[The Deep RL Course](http://rll.berkeley.edu/deeprlcourse/) by the [University of California, Berkeley](http://berkeley.edu/).
+
+
+## HW1: Behavioral Cloning and DAgger
+
+#### Run
 ```
 $ python run_BC.py --grid
-```
-*   run DAgger
-```
 $ python run_DAgger.py 
 ```
 
-# Result
-### vanilla behavioral cloning
+#### Result
+##### vanilla behavioral cloning
 ###### Succesful example
 On task Hopper-v1, the behavioral
 
@@ -19,6 +23,6 @@ On task Hopper-v1, the behavioral
 mean reward      |  3779.344349| 3776.911487
 std reward       |     3.122555| 3.245903
 
-### DAgger
+##### DAgger
 Result, presented for task `Hopper-v1` for which the DAgger policy outperforms vanilla.
-![reward vs epoch](/imgs/dagger-vanilla-comp-Hopper-v1.png)
+![reward vs epoch](hw1/imgs/dagger-vanilla-comp-Hopper-v1.png)
