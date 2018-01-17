@@ -89,3 +89,4 @@ ENV/
 .ropeproject
 
 /hw1/experts/*
+/hw2/data/*
