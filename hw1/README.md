@@ -16,3 +16,22 @@ In `experts/`, the provided expert policies are:
 * Walker2d-v1.pkl
 
 The name of the pickle file corresponds to the name of the gym environment.
+
+
+### HW1: Behavioral Cloning and DAgger
+```
+$ python run_BC.py --grid
+$ python run_DAgger.py 
+```
+###### Example
+On task Hopper-v1, the behavioral
+
+  Hopper-v1      |      expert |   imitation
+-----------------|-------------|------------                 
+mean reward      |  3779.344349| 3776.911487
+std reward       |     3.122555| 3.245903
+
+###### DAgger
+Result, presented for task `Hopper-v1` for which the DAgger policy outperforms vanilla.
+![reward vs epoch](imgs/dagger-vanilla-comp-Hopper-v1.png)
+
