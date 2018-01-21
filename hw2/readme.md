@@ -19,19 +19,16 @@ $ python train_pg.py CartPole-v0 -n 100 -b 5000 -e 5 -rtg --exp_name lb_rtg_na
 * Plot all the curve together.
 ![sb&lb_experiment](figure/sblb_isrtg_isna.png)
 
-* Answer the following questions briefly:
+Answer the following questions briefly:
    
-   * Which gradient estimator has better performance without advantage-centering, the trajectory-centric one, or the one using reward-to-go?
-      * reward-to-go is better 
-   
-   * Did advantage centering help?
-      * seems not that helpful
-   
-   * Describe what you expected from the math—do the empirical results match the theory?
-      * large batch helps, more samples helps reduce the variance
-   
-   * Did the batch size make an impact?
-      * Yes, larger is better
+* Which gradient estimator has better performance without advantage-centering, the trajectory-centric one, or the one using reward-to-go?
+   * reward-to-go is better 
+* Did advantage centering help?
+   * seems not that helpful
+* Describe what you expected from the math—do the empirical results match the theory?
+   * large batch helps, more samples helps reduce the variance  
+* Did the batch size make an impact?
+   * Yes, larger is better
 
 ## 2. Problem 2
 Run experiments in the InvertedPendulum-v1 continuous control environment and
