@@ -25,11 +25,10 @@ $ python train_pg.py CartPole-v0 -n 100 -b 5000 -e 5 -rtg --exp_name lb_rtg_na
       * reward-to-go is better 
    
    * Did advantage centering help?
-      * seems not that helpful
+      * seems not that helpful
    
-   * Describe what you expected from the math—do the empirical results match
-the theory?
-      * large batch helps, more samples helps reduce the variance
+   * Describe what you expected from the math—do the empirical results match the theory?
+      * large batch helps, more samples helps reduce the variance
    
    * Did the batch size make an impact?
       * Yes, larger is better
