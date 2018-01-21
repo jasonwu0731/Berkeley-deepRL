@@ -292,8 +292,8 @@ def train_PG(exp_name='',
 
         # Build arrays for observation, action for the policy gradient update by concatenating 
         # across paths
-        ob_no = np.concatenate([path["observation"] for path in paths])
-        ac_na = np.concatenate([path["action"] for path in paths])
+        ob_no = np.concatenate([path["observation"] for path in paths], axis=0)
+        ac_na = np.concatenate([path["action"] for path in paths], axis=0)
 
         #====================================================================================#
         #                           ----------SECTION 4----------
